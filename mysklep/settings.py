@@ -129,7 +129,7 @@ TEMPLATES = [
         'DIRS': [
             location('templates'), # templates directory of the project
             ],
-        'APP_DIRS': True,
+        #'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
