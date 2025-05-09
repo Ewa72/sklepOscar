@@ -216,7 +216,7 @@ HAYSTACK_CONNECTIONS = {
 
 LANGUAGE_CODE = 'pl'#'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Warsaw'#'UTC'
 
 USE_I18N = True
 
@@ -253,6 +253,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Static file serving.
 # https://whitenoise.readthedocs.io/en/stable/django.html#add-compression-and-caching-support
 STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        },    
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
