@@ -216,7 +216,7 @@ HAYSTACK_CONNECTIONS = {
 
 LANGUAGE_CODE = 'pl'#'en-us'
 
-TIME_ZONE = 'Europe/Warsaw'#'UTC'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -230,16 +230,17 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-#STATIC_URL = 'static/'
-STATIC_URL = 'static/'
-STATIC_ROOT =  os.path.join(BASE_DIR, "static")#BASE_DIR / 'static'
+STATIC_URL = '/static/'#'static/'
+STATIC_ROOT =  os.path.join(BASE_DIR, "staticfiles")#BASE_DIR / 'static'
 #nie wiem
 #STATICFILES_DIRS = [ os.path.join(BASE_DIR, "static")]#BASE_DIR / "static",]
 
-#STATICFILES_DIRS = (
- #   location('static/'),
-#)
-#STATIC_ROOT =  os.path.join(BASE_DIR, "static")#BASE_DIR / 'static'
+STATICFILES_DIRS = (
+  #  BASE_DIR / "static",
+    location('static/'),
+)
+
+
 # Define the base URL for serving media files
 MEDIA_URL = 'media/'#'/media/'
 # Specify the directory where media files are stored
@@ -253,7 +254,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Static file serving.
 # https://whitenoise.readthedocs.io/en/stable/django.html#add-compression-and-caching-support
 STORAGES = {
-    "default": {
+   "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
         },    
     "staticfiles": {
