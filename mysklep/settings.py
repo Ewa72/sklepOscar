@@ -205,7 +205,8 @@ AUTH_PASSWORD_VALIDATORS = [
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
-        'URL': 'http://127.0.0.1:8983/solr/sandbox',
+        #'URL': 'http://127.0.0.1:8983/solr/sandbox',
+        'URL': 'http://127.0.0.1:8983/solr/mysklep',
         'ADMIN_URL': 'http://127.0.0.1:8983/solr/admin/cores',
         'INCLUDE_SPELLING': True,
     },
