@@ -31,7 +31,7 @@ urlpatterns = [
     path('catalogue/galeria/', include('galeria.urls')),
 
     path('', include(apps.get_app_config('oscar').urls[0])),    
-]#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
     import debug_toolbar
 
