@@ -211,11 +211,15 @@ AUTH_PASSWORD_VALIDATORS = [
 #     },
 # }
 
+# Haystack settings
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': location('whoosh_index'),
     },
 }
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
