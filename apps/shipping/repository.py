@@ -20,6 +20,8 @@ from oscar.core.loading import get_classes
     ],
 )
 
+from oscar.apps.shipping import repository
+from . import methods
 
 class Repository(object):
     """
