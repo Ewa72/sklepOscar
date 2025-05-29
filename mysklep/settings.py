@@ -102,7 +102,7 @@ INSTALLED_APPS = [
     # other apps
     "post_office",
     #SEO
-    'rollyourown.seo',
+    #'rollyourown.seo',
 ]
 SITE_ID = 1
 
@@ -146,7 +146,7 @@ TEMPLATES = [
                 'oscar.core.context_processors.metadata',
                 
                 'django.template.context_processors.i18n',   
-                "django.core.context_processors.request"             
+               # "django.core.context_processors.request"             
             ],
             #"loaders": [
              #   (
