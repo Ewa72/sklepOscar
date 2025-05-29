@@ -101,6 +101,8 @@ INSTALLED_APPS = [
     'django_tables2',    
     # other apps
     "post_office",
+    #SEO
+    'rollyourown.seo',
 ]
 SITE_ID = 1
 
@@ -143,7 +145,8 @@ TEMPLATES = [
                 'oscar.apps.communication.notifications.context_processors.notifications',
                 'oscar.core.context_processors.metadata',
                 
-                'django.template.context_processors.i18n',                
+                'django.template.context_processors.i18n',   
+                "django.core.context_processors.request"             
             ],
             #"loaders": [
              #   (
