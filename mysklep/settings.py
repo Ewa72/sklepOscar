@@ -39,6 +39,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure--e0cwaeo(nt5#a
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
+# SEO
+DOMAIN = 'www.pasiekanadjeziorem.pl'
+
 ALLOWED_HOSTS = ['ewa72.pythonanywhere.com', 'www.pasiekanadjeziorem.pl' ]
 
 
@@ -53,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.flatpages',
 
     'oscar.config.Shop',
