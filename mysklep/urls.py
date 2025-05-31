@@ -19,6 +19,10 @@ from django.contrib import admin
 from django.urls import include,path
 from django.conf.urls.static import static
 from django.conf import settings
+from django.contrib.sitemaps import views
+#from django.contrib.sitemaps.views import sitemap
+
+from apps.sitemaps import base_sitemaps
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -30,7 +34,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('catalogue/galeria/', include('galeria.urls')),
 
-    path('', include(apps.get_app_config('oscar').urls[0])),    
+    path('', include(apps.get_app_config('oscar').urls[0])), 
+    
+     #path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap",)
+ 
+    # include a basic sitemap
+    path('sitemap.xml', views.index,
+        {'sitemaps': base_sitemaps}),
+    path('sitemap-<slug:section>.xml', views.sitemap,
+        {'sitemaps': base_sitemaps},
+        name='django.contrib.sitemaps.views.sitemap')
 ]#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
    #  import debug_toolbar
