@@ -2,7 +2,10 @@
 {% load static %}
  
 <!DOCTYPE html>
+{% comment %}
 <html lang="{{ LANGUAGE_CODE|default:"en-gb" }}" class="{% block html_class %}no-js{% endblock %}">
+{% endcomment %}
+<html lang="{{ LANGUAGE_CODE|default:"pl" }}" class="{% block html_class %}no-js{% endblock %}">
     <head>
     
        <title>{% block title %} - {{ shop_tagline }}{% endblock %}</title>
@@ -15,6 +18,10 @@
         <meta name="created" content="{% now "jS M Y h:i" %}" />
         <meta name="description" content="{% block description %}{% endblock %}" />
         <meta name="viewport" content="{% block viewport %}width=device-width{% endblock %}" />
+        <meta name="keywords" content="ewa adamus, pasieka nad jeziorem, czaplinek, pnj, adamus, miody " />
+        <!-- Canonical Tag -->
+        <link rel="canonical" href="{% block canonical_url %}{{ request.build_absolute_uri }}{% endblock %}" />
+        
 
   	
         {# Block where global CSS will go. #}
@@ -33,7 +40,6 @@
             {# Default to using Google analytics #}
             {% include "oscar/partials/google_analytics.html" %}
         {% endblock %}
-        <meta name="keywords" content="ewa adamus, pasieka nad jeziorem, czaplinek, pnj " />
     </head>
 
     <body id="{% block body_id %}default{% endblock %}" class="{% block body_class %}default{% endblock %}">
