@@ -159,7 +159,7 @@ ul.errorlist {
 }
 
  .logo {
- font-family: Comic Sans MS, Comic Sans, cursive !important;/*Chalkduster, fantasy;/*Copperplate;fantasy;*/
+ font-family: Chalkduster, fantasy !important;/*Copperplate;fantasy;*/
  float:left;
  font-size:40px;/*72px;*/
  color: /*rgb(153, 100, 150);*/darkorange;/*yellow;*/
