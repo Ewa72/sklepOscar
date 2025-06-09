@@ -243,6 +243,18 @@ HAYSTACK_CONNECTIONS = {
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'serwer2508289.home.pl'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'kontakt@pasiekanadjeziorem.pl'
+EMAIL_HOST_PASSWORD = 'dupaKonia1'
+
+
+
+
 LANGUAGE_CODE = 'pl'#'en-us'
 # Includes all languages that have >50% coverage in Transifex
 # Taken from Django's default setting for LANGUAGES

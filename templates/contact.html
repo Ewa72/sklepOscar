@@ -15,20 +15,30 @@
          
     <link href="{% static "main.css" %}" rel="stylesheet">      
  </head>
+
 <body>
-
-<h2>Wyślij wiadomość do 'kontakt@pasiekanadjeziorem.pl':</h2>
-
-<form action="Wyślij wiadomość do: kontakt@pasiekanadjeziorem.pl" method="post" enctype="text/plain">
-Imię:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Wiadomość:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Wyślij">
-<input type="reset" value="Reset">
-</form>
-
+    <h1>Wyślij wiadomość do 'kontakt@pasiekanadjeziorem.pl':</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send</button>
+    </form>
 </body>
 </html>
+
+<!-- <body> -->
+
+<!-- <h2>Wyślij wiadomość do 'kontakt@pasiekanadjeziorem.pl':</h2> -->
+
+<!-- <form action="Wyślij wiadomość do: kontakt@pasiekanadjeziorem.pl" method="post" enctype="text/plain"> -->
+<!-- Imię:<br> -->
+<!-- <input type="text" name="name"><br> -->
+<!-- E-mail:<br> -->
+<!-- <input type="text" name="mail"><br> -->
+<!-- Wiadomość:<br> -->
+<!-- <input type="text" name="comment" size="50"><br><br> -->
+<!-- <input type="submit" value="Wyślij"> -->
+<!-- <input type="reset" value="Reset"> -->
+<!-- </form> -->
+
+<!-- </body> -->
