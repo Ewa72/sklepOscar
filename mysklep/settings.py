@@ -94,8 +94,10 @@ INSTALLED_APPS = [
     'apps.checkout.apps.CheckoutConfig',
     #'apps.checkout.apps.StripeSCASandboxCheckoutConfig',
     #'apps.shipping.apps.ShippingConfig',
+    
     # my apps
     'galeria.apps.GaleriaConfig',
+    'contact.apps.ContactConfig',
 
     # 3rd-party apps that oscar depends on
     'widget_tweaks',

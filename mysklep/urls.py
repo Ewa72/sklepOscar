@@ -33,7 +33,8 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('catalogue/galeria/', include('galeria.urls')),
-
+    path('catalogue/contact/', include('contact.urls')),
+    
     path('', include(apps.get_app_config('oscar').urls[0])), 
     
      #path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap",)
