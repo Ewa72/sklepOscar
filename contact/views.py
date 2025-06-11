@@ -30,7 +30,7 @@ def contact_view(request):
                 subject,
                 message_body,
                 settings.EMAIL_HOST_USER,
-                ['kontakt@pasiekanadjeziorem.pl'],  # Replace with the recipient's email
+                ['ewa07adamus@gmail.com']#['kontakt@pasiekanadjeziorem.pl'],  # Replace with the recipient's email
             )
 
             return render(request, 'success.html')

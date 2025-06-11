@@ -246,11 +246,11 @@ HAYSTACK_CONNECTIONS = {
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'serwer2508289.home.pl'
+EMAIL_HOST = 'smtp.gmail.com'#EMAIL_HOST = 'serwer2508289.home.pl'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'kontakt@pasiekanadjeziorem.pl'
-EMAIL_HOST_PASSWORD = 'dupaKonia1'
+EMAIL_HOST_USER = 'ewa07adamus@gmail.com'#EMAIL_HOST_USER = 'kontakt@pasiekanadjeziorem.pl'
+EMAIL_HOST_PASSWORD = 'Ewuniagmail'#'dupaKonia1'
 
 
 
