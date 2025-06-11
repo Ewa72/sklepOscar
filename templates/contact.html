@@ -17,11 +17,11 @@
  </head>
 
 <body>
-    <h1>Wyślij wiadomość do 'kontakt@pasiekanadjeziorem.pl':</h1>
+    <h2>Wyślij wiadomość do 'kontakt@pasiekanadjeziorem.pl':</h2>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Send</button>
+        <button type="submit">Wyślij</button>
     </form>
 </body>
 </html>
