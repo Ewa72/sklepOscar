@@ -29,7 +29,7 @@ def contact_view(request):
             send_mail(
                 subject,
                 message_body,
-                settings.EMAIL_HOST_USER,
+                email,#?nie wiem settings.EMAIL_HOST_USER,
                 ['kontakt@pasiekanadjeziorem.pl'],  # Replace with the recipient's email
             )
 
