@@ -23,15 +23,21 @@
 <!-- 1. row -->
 <div class="row">                        
         <h5 > Celem kontaktu napisz do nas: 'kontakt@pasiekanadjeziorem.pl'</h5>
-       <h6> lub zadzwoń tel: 606 471 932   </h6>                                        
+       <h5> lub zadzwoń tel: 606 471 932   </h5>                                        
     </div>
     
 <!-- 2. row -->    
 <div class="row">
-
+   <h2>Wyślij wiadomość do 'kontakt@pasiekanadjeziorem.pl':</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+		{{ form.as_table }}
+        <button type="submit">Wyślij</button>
+    </form>
     <div class="col-xs-6 col-sm-4 col-lg-2">          <!-- "col-sm-3">-->  
   <!--     <div class="col">-->
-
+</div>
       
 </div> <!-- col -->
 
