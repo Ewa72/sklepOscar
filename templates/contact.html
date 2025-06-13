@@ -32,7 +32,6 @@
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-		{{ form.as_table }}
         <button type="submit">Wyślij</button>
     </form>
     <div class="col-xs-6 col-sm-4 col-lg-2">          <!-- "col-sm-3">-->  
@@ -61,17 +60,6 @@
    
 </body>
 
-
-<!-- <body>
-    <h2>Wyślij wiadomość do 'kontakt@pasiekanadjeziorem.pl':</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-		{{ form.as_table }}
-        <button type="submit">Wyślij</button>
-    </form>
-</body>
- -->
 
 </html>
 
