@@ -31,6 +31,7 @@ def contact_view(request):
                 message_body,
                 from_email=settings.EMAIL_HOST_USER,
                 recipient_list=[settings.RECIPIENT_ADDRESS, 'e_adamus@o2.pl'],#['kontakt@pasiekanadjeziorem.pl'],  # Replace with the recipient's email
+                fail_silently=False, 
             )
 
             return render(request, 'success.html')
