@@ -29,8 +29,8 @@ def contact_view(request):
             send_mail(
                 subject,
                 message_body,
-                settings.EMAIL_HOST_USER,
-                ['kontakt@pasiekanadjeziorem.pl'],  # Replace with the recipient's email
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[settings.RECIPIENT_ADDRESS, 'e_adamus@o2.pl'],#['kontakt@pasiekanadjeziorem.pl'],  # Replace with the recipient's email
             )
 
             return render(request, 'success.html')
