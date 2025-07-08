@@ -17,11 +17,11 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             # Extract cleaned data
-            #name = form.cleaned_data['name']
-            name = form.cleaned_data['imię']
+            name = form.cleaned_data['name']
+           # name = form.cleaned_data['imię']
             email = form.cleaned_data['email']
-           # message = form.cleaned_data['message']
-            message = form.cleaned_data['wiadomość']
+            message = form.cleaned_data['message']
+           # message = form.cleaned_data['wiadomość']
 
             # Email subject and message
             subject = f"New Contact from {name}"
