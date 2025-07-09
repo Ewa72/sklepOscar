@@ -34,7 +34,7 @@
                     {% block nav_items %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {% block browse_store_text %}{% trans "Show shop:" %}{% endblock %}
+                                {% block browse_store_text %}{% trans "Sklep" %}{% endblock %}
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 {% category_tree depth=1 as tree_categories %}
@@ -54,7 +54,7 @@
                       <li class="nav-item">
                           <a class="nav-link" href="galeria" role="button">                        
                       <!-- <a class="nav-link dropdown-toggle" href="galeria.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                                {% block galeria %}{% trans "Galeria:" %}{% endblock %}
+                                {% block galeria %}{% trans "Galeria" %}{% endblock %}
                         </a>                      
                       </li>
                       <li class="nav-item">
