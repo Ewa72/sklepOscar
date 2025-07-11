@@ -98,6 +98,7 @@ INSTALLED_APPS = [
     # my apps
     'galeria.apps.GaleriaConfig',
     'contact.apps.ContactConfig',
+    'about.apps.AboutConfig',
 
     # 3rd-party apps that oscar depends on
     'widget_tweaks',
