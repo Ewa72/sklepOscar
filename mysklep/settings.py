@@ -380,6 +380,8 @@ OSCAR_SHOP_NAME = 'Pasieka nad Jeziorem'
 
 OSCAR_SHOP_TAGLINE = 'Pasieka nad Jeziorem'
 
+OSCAR_HOMEPAGE = 'www.pasiekanadjeziorem.pl'
+
 OSCAR_DEFAULT_CURRENCY = 'PLN'
 
 # =================
