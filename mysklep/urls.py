@@ -21,7 +21,6 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.sitemaps import views
 #from django.contrib.sitemaps.views import sitemap
-
 from apps.sitemaps import base_sitemaps
 
 urlpatterns = [
