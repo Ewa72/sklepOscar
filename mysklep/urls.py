@@ -33,7 +33,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('catalogue/galeria/', include('galeria.urls')),
     path('catalogue/contact/', include('contact.urls')),
-     path('catalogue/about/', include('about.urls')),
+    path('catalogue/about/', include('about.urls')),
     
     path('', include(apps.get_app_config('oscar').urls[0])), 
     
