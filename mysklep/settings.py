@@ -40,7 +40,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure--e0cwaeo(nt5#a
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 # SEO
-##DOMAIN = 'www.pasiekanadjeziorem.pl' # last !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+DOMAIN = 'www.pasiekanadjeziorem.pl' 
 #SITE_NAME = 'Pasieka nad Jeziorem'
 
 ALLOWED_HOSTS = ['ewa72.pythonanywhere.com', 'www.pasiekanadjeziorem.pl' ]

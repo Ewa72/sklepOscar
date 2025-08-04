@@ -40,11 +40,13 @@ urlpatterns = [
      #path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap",)
  
     # include a basic sitemap
-    path('sitemap.xml', views.index,
-        {'sitemaps': base_sitemaps}),
-    path('sitemap-<slug:section>.xml', views.sitemap,
-        {'sitemaps': base_sitemaps},
-        name='django.contrib.sitemaps.views.sitemap')
+    # laast comment
+    # path('sitemap.xml', views.index,
+    #     {'sitemaps': base_sitemaps}),
+    # path('sitemap-<slug:section>.xml', views.sitemap,
+    #     {'sitemaps': base_sitemaps},
+    #     name='django.contrib.sitemaps.views.sitemap')
+    # END OF LAST COMMENT
 ]#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
    #  import debug_toolbar
