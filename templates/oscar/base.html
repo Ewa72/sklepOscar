@@ -21,8 +21,8 @@
         <meta name="viewport" content="{% block viewport %}width=device-width{% endblock %}" />
         <meta name="keywords" content="ewa adamus, pasieka nad jeziorem, czaplinek, pnj, adamus, miody " />
          <meta name="author" content="ewa adamus">
-  	
-  		<!-- <link rel="canonical" href="{% block canonical_url %}{{ request.build_absolute_uri }}{% endblock %}" /> -->
+  	 	<!-- Canonical Tag -->
+        <link rel="canonical" href="{% block canonical_url %}{{ request.build_absolute_uri }}{% endblock %}" />
         
         {# Block where global CSS will go. #}
         {% block styles %}<link href="{% static "main.css" %}" rel="stylesheet">{% endblock %}

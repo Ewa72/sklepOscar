@@ -34,20 +34,18 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('catalogue/galeria/', include('galeria.urls')),
     path('catalogue/contact/', include('contact.urls')),
-    path('catalogue/about/', include('about.urls')),
+    #path('catalogue/about/', include('about.urls')),
     
     path('', include(apps.get_app_config('oscar').urls[0])), 
     
      #path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap",)
  
     # include a basic sitemap
-    # laast comment
     path('sitemap.xml', views.index,
         {'sitemaps': base_sitemaps}),
     path('sitemap-<slug:section>.xml', views.sitemap,
         {'sitemaps': base_sitemaps},
         name='django.contrib.sitemaps.views.sitemap')
-    # END OF LAST COMMENT
 ]#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
    #  import debug_toolbar
