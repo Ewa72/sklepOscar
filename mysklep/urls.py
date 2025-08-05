@@ -29,7 +29,8 @@ urlpatterns = [
 
     # The Django admin is not officially supported; expect breakage.
     # Nonetheless, it's often useful for debugging.
-
+    
+    
     path('admin/', admin.site.urls),
     path('catalogue/galeria/', include('galeria.urls')),
     path('catalogue/contact/', include('contact.urls')),
