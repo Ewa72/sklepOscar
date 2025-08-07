@@ -37,8 +37,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure--e0cwaeo(nt5#a
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
-DEBUG = 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+#DEBUG = 'False'
 
 # SEO
 DOMAIN = 'www.pasiekanadjeziorem.pl' 
