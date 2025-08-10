@@ -46,7 +46,7 @@ urlpatterns = [
     path('sitemap-<slug:section>.xml', views.sitemap,
         {'sitemaps': base_sitemaps},
         name='django.contrib.sitemaps.views.sitemap')
-]#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
 if settings.DEBUG:
    #  import debug_toolbar
     
