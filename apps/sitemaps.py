@@ -38,12 +38,6 @@ class I18nSitemap(Sitemap):
 
 class StaticSitemap(I18nSitemap):
   
-    # do wyrzucenia?
-    def get_urls(self, site=None, **kwargs):
-        site = Site(domain='pasiekanadjeziorem.pl', name='pasiekanadjeziorem.pl')
-        return super(MySitemap, self).get_urls(site=site, **kwargs)
- # koniec
-
     def items(self):
         return ['home', ]
 
