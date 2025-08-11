@@ -4,10 +4,16 @@ from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 from django.utils.translation import get_language, activate
 from oscar.core.loading import get_model
+from django.contrib.sites.models import Site
+
 
 Product = get_model('catalogue', 'Product')
 Category = get_model('catalogue', 'Category')
 
+site = Site.objects.get(id=1)
+site.domain = "www.pasiekanadjeziorem.pl"   # without "http://"
+site.name = "Pasieka nad Jeziorem"
+site.save()
 
 """
 A basic example what a sitemap could look like for a multi-language Oscar
