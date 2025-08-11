@@ -45,6 +45,8 @@ DOMAIN = 'www.pasiekanadjeziorem.pl'
 #SITE_NAME = 'Pasieka nad Jeziorem'
 
 ALLOWED_HOSTS = ['ewa72.pythonanywhere.com', 'www.pasiekanadjeziorem.pl' ]
+CSRF_TRUSTED_ORIGINS = ['https://www.pasiekanadjeziorem.pl']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
@@ -382,7 +384,7 @@ OSCAR_SHOP_NAME = 'Pasieka nad Jeziorem'
 
 OSCAR_SHOP_TAGLINE = 'Pasieka nad Jeziorem'
 
-OSCAR_HOMEPAGE = 'www.pasiekanadjeziorem.pl'
+#OSCAR_HOMEPAGE = 'www.pasiekanadjeziorem.pl'   #?
 
 OSCAR_DEFAULT_CURRENCY = 'PLN'
 
