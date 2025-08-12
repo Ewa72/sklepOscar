@@ -47,7 +47,8 @@ DOMAIN = 'www.pasiekanadjeziorem.pl'
 ALLOWED_HOSTS = ['ewa72.pythonanywhere.com', 'www.pasiekanadjeziorem.pl' ]
 CSRF_TRUSTED_ORIGINS = ['https://www.pasiekanadjeziorem.pl']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
+META_USE_SITES = True
+META_SITE_PROTOCOL = 'https'
 
 # Application definition
 
@@ -112,6 +113,7 @@ INSTALLED_APPS = [
     'django_tables2',    
     # other apps
     "post_office",
+    'meta',
     #SEO
     #'rollyourown.seo',
 ]
@@ -383,6 +385,8 @@ OSCAR_DASHBOARD_NAVIGATION += [
 OSCAR_SHOP_NAME = 'Pasieka nad Jeziorem'
 
 OSCAR_SHOP_TAGLINE = 'Pasieka nad Jeziorem'
+
+shop_tagline = 'Pasieka nad Jeziorem'
 
 #OSCAR_HOMEPAGE = 'www.pasiekanadjeziorem.pl'   #?
 
