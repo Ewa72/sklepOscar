@@ -44,7 +44,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 DOMAIN = 'www.pasiekanadjeziorem.pl' 
 #SITE_NAME = 'Pasieka nad Jeziorem'
 
-ALLOWED_HOSTS = ['ewa72.pythonanywhere.com', 'www.pasiekanadjeziorem.pl' ]
+ALLOWED_HOSTS = ['ewa72.pythonanywhere.com', 'www.pasiekanadjeziorem.pl', 'pasiekanadjeziorem.pl' ]
 CSRF_TRUSTED_ORIGINS = ['https://www.pasiekanadjeziorem.pl']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 META_USE_SITES = True
