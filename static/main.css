@@ -171,6 +171,12 @@ ul.errorlist {
  background-position: center; 
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .fit-picture {
     width: 75px;/*100px;*/
 }
